@@ -20,11 +20,7 @@ RUN apt-get install -y build-essential pkg-config python-is-python3
 COPY --link bun.lockb package.json ./
 COPY --link . .
 
-# install all dependencies and run production build
-RUN bun i --ignore-scripts --frozen-lockfile
-RUN bun build:prod
-
-# clear node_modules folder and re-install production dependencies only
+# clear node_modules folder and install production dependencies only
 RUN rm -rf node_modules
 RUN bun i --ignore-scripts --frozen-lockfile --production
 

@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: install, lint, build
+    name: install, lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,4 +18,3 @@ jobs:
 
       - run: bun i --ignore-scripts --frozen-lockfile
       - run: bun lint
-      - run: bun build:prod
