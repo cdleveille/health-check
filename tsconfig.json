@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "module": "esnext",
+    "target": "esnext",
+    "types": ["bun-types"],
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "noEmit": true,
+    "composite": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets": ["./src/client/assets"],
+      "@components": ["./src/client/components"],
+      "@constants": ["./src/types/constants"],
+      "@contexts": ["./src/client/contexts"],
+      "@helpers": ["./src/server/helpers"],
+      "@hooks": ["./src/client/hooks"],
+      "@middleware": ["./src/server/middleware"],
+      "@processes": ["./processes"],
+      "@routes": ["./src/server/routes"],
+      "@types": ["./src/types/abstract"],
+      "@utils": ["./src/client/utils"]
+    }
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx", "./**/*.json"]
+}
