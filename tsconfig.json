@@ -19,20 +19,7 @@
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "strict": true,
-    "baseUrl": ".",
-    "paths": {
-      "@assets": ["./src/client/assets"],
-      "@components": ["./src/client/components"],
-      "@constants": ["./src/types/constants"],
-      "@contexts": ["./src/client/contexts"],
-      "@helpers": ["./src/server/helpers"],
-      "@hooks": ["./src/client/hooks"],
-      "@middleware": ["./src/server/middleware"],
-      "@processes": ["./processes"],
-      "@routes": ["./src/server/routes"],
-      "@types": ["./src/types/abstract"],
-      "@utils": ["./src/client/utils"]
-    }
+    "baseUrl": "."
   },
   "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx", "./**/*.json"]
 }
